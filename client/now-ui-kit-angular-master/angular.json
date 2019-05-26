@@ -18,7 +18,12 @@
             "polyfills": "src/polyfills.ts",
             "assets": [
               "src/assets",
-              "src/favicon.ico"
+              "src/favicon.ico",
+              {
+                "glob": "**/*.@(svg|png|gif)",
+                "input": "./node_modules/photoswipe/src/css/default-skin",
+                "output": "/assets/media"
+              }
             ],
             "styles": [
               "src/styles.scss",

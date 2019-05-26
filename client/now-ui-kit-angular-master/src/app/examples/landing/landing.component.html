@@ -3,6 +3,7 @@
         <div class="page-header-image rellax-header bkg-img" data-rellax-speed="0">
             <ngb-carousel>
                 <ng-template ngbSlide>
+
                     <img class="d-block" src="assets/img/cas/cas1.jpg" alt="First slide">
 
                 </ng-template>
@@ -19,19 +20,8 @@
             <div class="content-center">
                 <h1 class="title"> Welcome to Salon Swapna </h1>
                 <div class="separator separator-primary"></div>
+                <h3>add animation</h3>
 
-                <div class="text-center">
-                    <h3>To help and maintain dignity, confidence and self-esteem of those who are affected by medical
-                        hair loss.</h3>
-                </div>
-                <div class="text-center">
-                    <a href="#pablo" class="btn btn-primary btn-round btn-lg">
-                        Donate Hair
-                    </a>
-                    <a href="#pablo" class="btn btn-primary btn-round btn-lg">
-                        Apply For a Wig
-                    </a>
-                </div>
             </div>
         </div>
 
@@ -81,13 +71,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto text-center">
-                    <h2 class="title">Image Gallery</h2>
+                    <h2 class="title">Gallery</h2>
                 </div>
             </div>
             <div class="separator separator-primary"></div>
             <div class="section-story-overview">
                 <div class="row">
-                    <h5>gallery here</h5>
+                    <app-gallery></app-gallery>
 
                 </div>
             </div>
@@ -140,7 +130,7 @@
     </div>
     <div class="section section-contact-us text-center">
         <div class="container">
-            <h2 class="title">Want to work with us?</h2>
+            <h2 class="title">Contact Us</h2>
             <p class="description">Your project is very important to us.</p>
             <div class="row">
                 <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
@@ -171,37 +161,6 @@
         </div>
     </div>
     <footer class="footer footer-default">
-        <div class="container">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="https://www.creative-tim.com">
-                            Creative Tim
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.creative-tim.com/about-us">
-                            About Us
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://blog.creative-tim.com">
-                            Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md">
-                            MIT License
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="copyright">
-                &copy;
-                {{data | date: 'yyyy'}}, Designed by
-                <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by
-                <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
-            </div>
-        </div>
+
     </footer>
 </div>

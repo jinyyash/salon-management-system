@@ -9,6 +9,7 @@ import { ExamplesModule } from './examples/examples.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import {Angular2PhotoswipeModule} from 'angular2_photoswipe';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
         RouterModule,
         AppRoutingModule,
         ComponentsModule,
-        ExamplesModule
+        ExamplesModule,
+
     ],
     providers: [],
     bootstrap: [AppComponent]
