@@ -11,6 +11,12 @@ import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
+import { ClientComponent } from '../../client/client.component';
+import { EmployeeComponent } from '../../employee/employee.component';
+import { AppointmentComponent } from '../../appointment/appointment.component';
+import { AddComponent } from '../../client/add/add.component';
+import { EditComponent } from '../../client/edit/edit.component';
+import { BillingComponent } from '../../billing/billing.component';
 
 import {
   MatButtonModule,
@@ -20,6 +26,8 @@ import {
   MatTooltipModule,
   MatSelectModule
 } from '@angular/material';
+
+
 @NgModule({
   imports: [
     CommonModule,
@@ -41,6 +49,12 @@ import {
     MapsComponent,
     NotificationsComponent,
     UpgradeComponent,
+    ClientComponent,
+    EmployeeComponent,
+    AppointmentComponent,
+    AddComponent,
+    EditComponent,
+    BillingComponent
   ]
 })
 

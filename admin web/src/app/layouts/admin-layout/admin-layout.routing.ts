@@ -8,6 +8,12 @@ import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
+import { ClientComponent } from '../../client/client.component';
+import { EmployeeComponent } from 'app/employee/employee.component';
+import { AppointmentComponent } from 'app/appointment/appointment.component';
+import { AddComponent } from 'app/client/add/add.component';
+import { EditComponent } from 'app/client/edit/edit.component';
+import { BillingComponent } from 'app/billing/billing.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -53,11 +59,17 @@ export const AdminLayoutRoutes: Routes = [
     //     }]
     // }
     { path: 'dashboard',      component: DashboardComponent },
+    { path: 'employee',       component: EmployeeComponent },
+    { path: 'client',         component: ClientComponent },
+    { path: 'appointment',    component: AppointmentComponent },
+    { path: 'client/add',     component: AddComponent },
+    { path: 'client/update',  component: EditComponent },
+    { path: 'billing',        component: BillingComponent },
     { path: 'user-profile',   component: UserProfileComponent },
     { path: 'table-list',     component: TableListComponent },
     { path: 'typography',     component: TypographyComponent },
     { path: 'icons',          component: IconsComponent },
     { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
-    { path: 'upgrade',        component: UpgradeComponent },
+    { path: 'upgrade',        component: UpgradeComponent }
 ];

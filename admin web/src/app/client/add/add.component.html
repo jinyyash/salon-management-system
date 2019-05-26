@@ -1,0 +1,58 @@
+
+<div class="main-content">
+  
+  <div class="container-fluid">
+      <div class="card">
+          <div class="card-header card-header-danger">
+              <h4 class="card-title">Add Client</h4>
+          </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="card-body card-body-light">
+                        <div class="text-right">
+                          <form #addclientForm="ngForm" (ngSubmit)="addclientForm.valid && onSubmit(addclientForm)">
+                            <div class="form-group">
+                              <!-- <label>First Name</label> -->
+                              <input type="text" required class="form-control" name="fname" [(ngModel)]="client.fname" #fname="ngModel" placeholder="Enter Client First Name"> 
+                              <div *ngIf="fname.invalid && (fname.dirty || fname.touched)" class="text-danger">
+                                <small *ngIf="fname['errors']['required']">First Name is required. </small>
+                              </div>
+                            </div><br>
+                            <div class="form-group">
+                              <!-- <label>Last Name</label> -->
+                              <input type="text" required class="form-control" name="lname" [(ngModel)]="client.lname" #lname="ngModel" placeholder="Enter Client Last Name"> 
+                              <div *ngIf="lname.invalid && (lname.dirty || lname.touched)" class="text-danger">
+                                <small *ngIf="lname['errors']['required']">Last Name is required. </small>
+                              </div>
+                            </div><br>
+                            <div class="form-group">
+                              <!-- <label>Email</label> -->
+                              <input type="text" required   class="form-control" name="email" [(ngModel)]="client.email" #email="ngModel" placeholder="Enter Client Email Address"> 
+                              <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-danger">
+                                <small *ngIf="email['errors']['required']">Email is required. </small>
+                                <!-- <small *ngIf="email['errors']['pattern']">Email must be a valid email address. </small> -->
+                              </div>
+                            </div><br>
+                            <div class="form-group">
+                              <!-- <label>Phone Number</label> -->
+                              <input type="text"  required class="form-control" name="phone" [(ngModel)]="client.phone" #phone="ngModel" placeholder="Enter Client Phone Number"> 
+                              <div *ngIf="phone.invalid && (phone.dirty || phone.touched)" class="text-danger">
+                                <small *ngIf="phone['errors']['required']">Phone Number is required. </small>
+                                <!-- <small *ngIf="phone['errors']['pattern']">Invalid Phone Number. </small> -->
+                                <!-- <small *ngIf="phone['errors']['maxlength']">Phone Number must be contained 10 digits. </small> -->
+                              </div>
+                            </div><br>
+                            <button class="btn btn-primary" type="submit" >Submit</button>
+                            <!-- <input type="submit" value="Submit"> -->
+                          </form>
+                          <!-- success message -->
+                          <div class="success" *ngIf="successMessage">Saved successfully.</div>
+                          <!-- error message -->
+                          <div class="alert" *ngIf="errorMessage">{{errorMessage}}</div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
