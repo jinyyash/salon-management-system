@@ -4,18 +4,24 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ComponentsComponent } from './components/components.component';
-import { LandingComponent } from './examples/landing/landing.component';
-import { LoginComponent } from './examples/login/login.component';
-import { ProfileComponent } from './examples/profile/profile.component';
+import { LandingComponent } from './Swapna/landing/landing.component';
+import { LoginComponent } from './Swapna/login/login.component';
+import { ProfileComponent } from './Swapna/profile/profile.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
+import {SignUpComponent} from './Swapna/auth/sign-up/sign-up.component';
+import {SignInComponent} from './Swapna/auth/sign-in/sign-in.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'index', pathMatch: 'full' },
     { path: 'index',                component: ComponentsComponent },
     { path: 'nucleoicons',          component: NucleoiconsComponent },
-    { path: 'examples/landing',     component: LandingComponent },
-    { path: 'examples/login',       component: LoginComponent },
-    { path: 'examples/profile',     component: ProfileComponent }
+    { path: 'Swapna/landing',     component: LandingComponent },
+    { path: 'Swapna/login',       component: LoginComponent },
+    { path: 'Swapna/profile',     component: ProfileComponent },
+    { path: 'Swapna/signUp',     component: SignUpComponent },
+    { path: 'Swapna/signIn',     component: SignInComponent }
+
+
 ];
 
 @NgModule({

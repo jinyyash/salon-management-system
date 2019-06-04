@@ -1,7 +1,276 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb97e593-ab74-4eb5-b64d-e309aa49542a" name="Default Changelist" comment="" />
+    <list default="true" id="eb97e593-ab74-4eb5-b64d-e309aa49542a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/routes/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/documentation/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/documentation/css/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/documentation/css/now-ui-kit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/documentation/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/documentation/js/jquery.3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/documentation/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/documentation/tutorial-components.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/e2e/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/e2e/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/e2e/tsconfig.e2e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/examples.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/examples.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/examples.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/examples.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/examples.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/landing/gallery/gallery.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/landing/gallery/gallery.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/landing/gallery/gallery.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/landing/gallery/gallery.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/landing/landing.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/landing/landing.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/landing/landing.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/landing/landing.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/login/login.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/login/login.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/login/login.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/login/login.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/profile/profile.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/profile/profile.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/profile/profile.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/Swapna/profile/profile.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/app.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/app.routing.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/basicelements/basicelements.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/basicelements/basicelements.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/basicelements/basicelements.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/basicelements/basicelements.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/components.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/components.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/components.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/modal/modal.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/modal/modal.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/modal/modal.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/modal/modal.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/navigation/navigation.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/navigation/navigation.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/navigation/navigation.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/navigation/navigation.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/notification/notification.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/notification/notification.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/notification/notification.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/notification/notification.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/nucleoicons/nucleoicons.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/nucleoicons/nucleoicons.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/nucleoicons/nucleoicons.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/nucleoicons/nucleoicons.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/typography/typography.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/typography/typography.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/typography/typography.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/components/typography/typography.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/shared/navbar/navbar.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/shared/navbar/navbar.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/shared/navbar/navbar.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/app/shared/navbar/navbar.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/css/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/fonts/nucleo-outline.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/fonts/nucleo-outline.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/fonts/nucleo-outline.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/fonts/nucleo-outline.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/apple-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/bg11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/bg3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/bg4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/bg5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/bg6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/bg7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/bg8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/blurred-image-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/cas/cas1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/cas/cas2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/cas/cas3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/cas/cas4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/creative-tim-white-slim2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/default-avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/eva.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/AD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/AE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/AG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/AM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/AR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/AT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/AU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/BE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/BF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/BG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/BO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/BR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/CA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/CD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/CG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/CH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/CL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/CM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/CN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/CO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/CZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/DE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/DJ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/DK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/DZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/EE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/EG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/ES.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/FI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/FR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/GA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/GB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/GM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/GT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/HN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/HT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/HU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/ID.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/IE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/IL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/IN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/IQ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/IR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/IT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/JM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/JO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/JP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/KG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/KN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/KP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/KR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/KW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/KZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/LA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/LB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/LC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/LS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/LU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/LV.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/MG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/MK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/ML.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/MM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/MT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/MX.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/NA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/NE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/NG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/NI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/NL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/NO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/OM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/PA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/PE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/PG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/PK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/PL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/PT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/PY.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/QA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/RO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/RU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/RW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/SA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/SE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/SG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/SL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/SN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/SO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/SV.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/TD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/TJ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/TL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/TR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/TZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/UA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/US.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/VE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/VN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/flags/YE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/hero-image-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/hero-image-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/hero-image-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/invision-white-slim.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/landing.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/login.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/logo-square.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/now-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/nucleo-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/profile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/img/ryan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_alerts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_badges.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_carousel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_checkboxes-radio.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_example-pages.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_footers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_inputs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_misc.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_modals.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_nucleo-outline.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_pills.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_popups.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_responsive.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_sections.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_social-buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_tabs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/mixins/_badges.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/mixins/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/mixins/_datepicker.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/mixins/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/mixins/_inputs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/mixins/_modals.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/mixins/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/mixins/_pages.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/mixins/_popovers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/mixins/_transparency.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/mixins/_vendor-prefixes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/plugins/_plugin-bootstrap-switch.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/plugins/_plugin-datepicker.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/assets/sass/now-ui-kit/plugins/_plugin-nouislider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/src/typings.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/now-ui-kit-angular-master/tslint.json" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -13,19 +282,51 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/AppoinmentController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/postController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/appoinment.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="22" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="7" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/post.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -37,6 +338,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/routes/appoinments.js" />
+        <option value="$PROJECT_DIR$/models/appoinment.js" />
+        <option value="$PROJECT_DIR$/controllers/AppoinmentController.js" />
       </list>
     </option>
   </component>
@@ -57,6 +361,21 @@
             <path>
               <item name="backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -92,22 +411,20 @@
       <option name="presentableId" value="Default" />
       <updated>1557889129876</updated>
       <workItem from="1557889134828" duration="1521000" />
+      <workItem from="1559677350231" duration="442000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1521000" />
+    <option name="totallyTimeSpent" value="1963000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="23" width="1372" height="721" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24944155" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32874355" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -115,6 +432,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32874355" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -131,6 +452,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/appoinments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/posts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/post.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/appoinment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/postController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/AppoinmentController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
         </state>
       </provider>
     </entry>

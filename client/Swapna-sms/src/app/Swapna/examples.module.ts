@@ -12,6 +12,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { ExamplesComponent } from './examples.component';
 import { GalleryComponent } from './landing/gallery/gallery.component';
 import {Angular2PhotoswipeModule} from 'angular2_photoswipe';
+import { SignUpComponent } from './auth/sign-up/sign-up.component';
+import { SignInComponent } from './auth/sign-in/sign-in.component';
 
 @NgModule({
     imports: [
@@ -30,7 +32,9 @@ import {Angular2PhotoswipeModule} from 'angular2_photoswipe';
         LoginComponent,
         ExamplesComponent,
         ProfileComponent,
-        GalleryComponent
+        GalleryComponent,
+        SignUpComponent,
+        SignInComponent
     ]
 })
 export class ExamplesModule { }

@@ -1,0 +1,227 @@
+<div class="wrapper">
+    <div class="page-header page-header-small" filter-color="orange">
+        <div class="page-header-image rellax-header" data-rellax-speed="-8"
+             style="background-image: url('assets/img/flags/profile.jpg') ;">
+        </div>
+        <div class="container">
+            <div class="content-center">
+                <div class="photo-container">
+                    <img src="assets/img/ryan.jpg" alt="">
+                </div>
+                <h3 class="title">Ryan Scheinder</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <h3 class="title">Reserve your Date</h3>
+            <h5 class="description"> Not every woman has time to go to a salon and have her hair blow-dried every day.</h5>
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="title text-center">My Porfile</h4>
+                    <ngb-tabset [justify]="'center'" type="pills"
+                                class="nav nav-pills nav-pills-primary  nav-pills-just-icons justify-content-center tab-space">
+                        <ngb-tab>
+                            <ng-template ngbTabTitle>
+                                <i class="now-ui-icons design_image"></i>
+                            </ng-template>
+                            <br>
+                            <ng-template ngbTabContent>
+                                <div class="row">
+                                    <div class="col-md-10 ml-auto mr-auto">
+                                        <div class="row collections">
+                                            <div class="col-md-6">
+                                                <img src="assets/img/cas/cas2.jpg" alt="" class="img-raised">
+                                                <img src="assets/img/cas/cas3.jpg" alt="" class="img-raised">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="card card-signup" >
+                                                    <form class="form"  #f="ngForm"  >
+                                                        <div class="header text-center">
+                                                            <h4 class="title title-up">Book Your Date</h4>
+                                                        </div>
+
+                                                        <div class="card-body">
+
+                                                            <div class="form-group" >
+                                                                <label class="form-control-label">Select Your Treatment</label>
+                                                                <select [(ngModel)]="value2" name="selectTime"  class="form-control text-primary" id="selectTime" required data-color="white">
+                                                                    <option >
+                                                                        <h5>Select Your Treatment</h5>
+                                                                    </option>
+                                                                </select>
+                                                            </div><br> <br>
+
+                                                            <div class="datepicker-container">
+                                                                <div class="form-group">
+                                                                    <label class="form-control-label"> Select Your Appointment Date</label>
+                                                                    <input class="form-control datetimepicker"
+                                                                           placeholder="Select Your Appoinment Date"
+                                                                           name="date"
+                                                                           [(ngModel)]="model2"
+                                                                           ngbDatepicker #dd="ngbDatepicker"
+                                                                           required (click)="dd.toggle()" >
+                                                                </div>
+                                                            </div><br> <br>
+
+                                                            <div class="form-group" >
+                                                                <label >Select Your Appoinment Time</label>
+                                                                <select [(ngModel)]="value3" name="selectTime"  class="form-control text-primary" id="selectTime"   data-color="white">
+                                                                    <option  data-color="white">
+                                                                        <h5>Select Your appoinmet Time</h5>
+                                                                    </option>
+                                                                </select>
+                                                            </div><br><br>
+
+
+
+
+
+                                                            <!-- If you want to add a checkbox to this form, uncomment this code -->
+                                                            <!-- <div class="checkbox">
+                                                  <input id="checkboxSignup" type="checkbox">
+                                                  <label for="checkboxSignup">
+                                                  Unchecked
+                                                  </label>
+                                                  </div> -->
+
+                                                        </div>
+                                                        <div class="footer text-center">
+                                                            <button class="btn btn-primary btn-round btn-lg"
+                                                                    type="submit">Reserve
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </ngb-tab>
+
+
+                        <ngb-tab>
+                            <ng-template ngbTabTitle>
+                                <i class="now-ui-icons location_world"></i>
+                            </ng-template>
+                            <ng-template ngbTabContent>
+                                <div class="row">
+                                    <div class="col-md-10 ml-auto mr-auto">
+                                        <div class="row collections">
+                                            <div class="col-md-6">
+                                                <img src="assets/img/cas/cas1.jpg" class="img-raised">
+                                            </div>
+                                            <div class="col-md-6">
+
+                                                <div class="card card-signup" data-background-color="orange">
+                                                    <form class="form" (ngSubmit)="onMeasurements(f)" #f="ngForm">
+                                                        <div class="header text-center">
+                                                            <h4 class="title title-up">Your Bookings</h4>
+                                                        </div>
+
+                                                        <div class="card-body">
+
+                                                        </div>
+                                                        <div class="footer text-center">
+                                                            <button class="btn btn-neutral btn-round btn-lg"
+                                                                    type="submit">Confirm
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </ng-template>
+                        </ngb-tab>
+                        <ngb-tab>
+                            <ng-template ngbTabTitle>
+                                <i class="now-ui-icons sport_user-run"></i>
+                            </ng-template>
+                            <ng-template ngbTabContent>
+                                <h1>Beauty History</h1>
+
+                                <div class="row">
+                                    <div class="col-md-10 ml-auto mr-auto">
+                                       <!--------------------------mxjnjsnxjs-------------------------------->
+                                        <div class="card card-login card-plain">
+                                            <form class="form" (ngSubmit)="onSignIn(fo)" #fo="ngForm">
+                                                <div class="header header-primary text-center">
+                                                    <div class="logo-container">
+                                                        <img src="assets\img\flags\indiracancertrust.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <h5></h5>
+                                                <div class="content">
+                                                    <div class="input-group form-group-no-border input-lg" [ngClass]="{'input-group-focus':focus===true}">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">  <i class="now-ui-icons ui-1_email-85"></i></span>
+                                                        </div>
+                                                        <input type="text"
+                                                               class="form-control"
+                                                               placeholder="Name"
+                                                               name="name"
+                                                               id="name"
+                                                               ngModel
+                                                               (focus)="focus=true" (blur)="focus=false" >
+                                                    </div>
+                                                    <div class="input-group form-group-no-border input-lg" [ngClass]="{'input-group-focus':focus1===true}">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                                                        </div>
+                                                        <input type="password"
+                                                               placeholder="Email"
+                                                               name="email"
+                                                               class="form-control"
+                                                               id="email"
+                                                               ngModel
+                                                               (focus)="focus1=true" (blur)="focus1=false"/>
+                                                    </div>
+                                                    <div class="input-group form-group-no-border input-lg" [ngClass]="{'input-group-focus':focus1===true}">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                                                        </div>
+                                                        <input type="password"
+                                                               placeholder="Contact Number"
+                                                               name="tel"
+                                                               class="form-control"
+                                                               id="tel"
+                                                               ngModel
+                                                               (focus)="focus1=true" (blur)="focus1=false"/>
+                                                    </div>
+                                                </div>
+                                                <div class="footer text-center">
+                                                    <button class="btn btn-primary btn-round btn-lg btn-block"  type="submit">Get Started</button>
+                                                </div>
+                                                <div class="pull-left">
+                                                    <h6>
+                                                        <a href="#pablo" class="link"></a>
+                                                    </h6>
+                                                </div>
+                                                <div class="pull-right">
+                                                    <h6>
+                                                        <a href="#pablo" class="link">Need Help?</a>
+                                                    </h6>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </ngb-tab>
+                    </ngb-tabset>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer footer-default">
+
+    </footer>
+</div>
