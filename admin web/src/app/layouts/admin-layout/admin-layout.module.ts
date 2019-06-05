@@ -17,6 +17,7 @@ import { AppointmentComponent } from '../../appointment/appointment.component';
 import { AddComponent } from '../../client/add/add.component';
 import { EditComponent } from '../../client/edit/edit.component';
 import { BillingComponent } from '../../billing/billing.component';
+import { BillingReportComponent } from '../../billing-report/billing-report.component';
 
 import {
   MatButtonModule,
@@ -54,7 +55,8 @@ import {
     AppointmentComponent,
     AddComponent,
     EditComponent,
-    BillingComponent
+    BillingComponent,
+    BillingReportComponent
   ]
 })
 

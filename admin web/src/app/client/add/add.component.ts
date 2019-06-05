@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Addclient } from 'app/addclient';
+import { Addclient } from 'app/class/addclient';
 import { ProvideServicesService } from '../../providers/provide-services.service';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';

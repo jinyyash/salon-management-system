@@ -28,6 +28,7 @@ import { AddComponent } from './client/add/add.component';
 import { EditComponent } from './client/edit/edit.component';
 import { ProvideServicesService } from './providers/provide-services.service';
 import { BillingComponent } from './billing/billing.component';
+import { BillingReportComponent } from './billing-report/billing-report.component';
 @NgModule({
   imports: [
     BrowserAnimationsModule,

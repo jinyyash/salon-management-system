@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Addclient } from '../addclient';
-import { Billing } from '../billing';
+import { Addclient } from '../class/addclient';
+import { Billing } from '../class/billing';
+import { Appointment } from '../class/appointment';
 
 @Injectable({
   providedIn: 'root'
@@ -44,6 +45,16 @@ export class ProvideServicesService {
   // billing
   ViewBilling() {
     return this.http.get(this.apiBaseUrl + '/billingview');
+  }
+  CalculateBilling(email: string){
+    return this.http.get(this.apiBaseUrl + '/calculateBilling/' + email);
+  }
+
+  // appointment
+  ViewAppointment() {
+    return this.http.get(this.apiBaseUrl + '/appointmentview');
+  }
+  SearchAppointment(){
   }
 }
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { Addclient } from 'app/addclient';
+import { Addclient } from 'app/class/addclient';
 import { ProvideServicesService } from '../providers/provide-services.service';
 
 @Component({

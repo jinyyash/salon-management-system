@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { Billing } from 'app/billing';
+import {Appointment} from 'app/class/appointment';
+import { Billing } from 'app/class/billing';
 import { ProvideServicesService } from '../providers/provide-services.service';
 
 @Component({
@@ -11,17 +13,22 @@ import { ProvideServicesService } from '../providers/provide-services.service';
 })
 export class BillingComponent implements OnInit {
   billings: Billing[];
+  appointments: Appointment[];
   
   constructor( private router: Router, public http: HttpClient, private provideServices: ProvideServicesService ) { }
 
   ngOnInit() {
-    this.provideServices.ViewBilling().subscribe((data: Billing[]) => {
-      this.billings = data;
+    this.provideServices.ViewAppointment().subscribe((data: Appointment[]) => {
+      this.appointments = data;
       console.log(data);
     })
   }
 
-  billing() {
-
+  search(email) {
+    console.log(email);
+    this.provideServices.CalculateBilling(email).subscribe((data: Appointment[]) => {
+      this.appointments = data;
+      console.log(data.length);
+    })
   }
 }

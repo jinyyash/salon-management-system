@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Addclient } from 'app/addclient';
+import { Addclient } from 'app/class/addclient';
 import { ProvideServicesService } from '../../providers/provide-services.service';
 import { Router } from '@angular/router';
 
@@ -23,7 +23,7 @@ export class EditComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    if(this.client.fname == undefined){
+    if (this.client.fname == undefined) {
       console.log("hgbuhyu,huhujhuhui");
       this.provideServices.AddClient(this.client).subscribe(
         data => {
@@ -34,7 +34,7 @@ export class EditComponent implements OnInit {
           console.log(error);
         }
       )
-    }else{
+    } else {
       this.provideServices.UpdateClient(this.client).subscribe(
         data => {
           console.log(data);

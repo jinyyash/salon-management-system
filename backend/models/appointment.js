@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
 const appointmentSchema = mongoose.Schema({
-  cutomer_id: { type: String, required: true },
-  provide_services: { type: Number, required: true },
+  email: { type: String, required: true },
+  provide_service: { type: String, required: true },
 });
 
 module.exports = mongoose.model('Appointments', appointmentSchema);
