@@ -109,7 +109,7 @@ app.put("/api/clientupdate",(req,res,next) => {
     if(err){
       res.status(500).json({ errmsg: err });
     }else{
-      console.log(req.body._id);
+      console.log(req.body._id+"     hjhnj");
       details.fname = req.body.fname;
       details.lname = req.body.lname;
       details.email = req.body.email;
@@ -127,11 +127,11 @@ app.put("/api/clientupdate",(req,res,next) => {
         res.status(201).json({
           message: "Updated successfully"
         })
-        .catch(err => {
-          res.status(400).json({
-            message: "Unable to update"
-          })
-        })
+        // .catch(err => {
+        //   res.status(400).json({
+        //     message: "Unable to update"
+        //   })
+        // })
       })
     }
   })
@@ -160,8 +160,61 @@ app.post("/api/serviceadding",(req, res, next) => {
       message: "service added successfully"
     })
   })
-})
+}) 
+//service view
+app.get("/api/servicesview", (req, res, next) => {
+  Services.find()
+  .exec()
+  .then(doc => {
+    console.log(doc);
+    res.status(200).json(doc);
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json();
+  })
+});
+app.put("/api/serviceupdate",(req,res,next) => {
+  console.log(req.body._id);
+  Services.findById({_id:req.body._id}, (err,details) => {
+    if(err){
+      res.status(500).json({ errmsg: err });
+    }else{
+      console.log(req.body._id);
+      details.service_name = req.body.service_name;
+      details.service_payment = req.body.service_payment;
 
+      details.save()
+      // const addclient = new Client({
+      //   fname: req.body.fname,
+      //   lname: req.body.lname,
+      //   email: req.body.email,
+      //   phone: req.body.phone,
+      // });
+      // addclient.save()
+      .then(addservice => {
+        res.status(201).json({
+          message: "Updated successfully"
+        })
+        .catch(err => {
+          res.status(400).json({
+            message: "Unable to update"
+          })
+        })
+      })
+    }
+  })
+})
+app.delete('/api/servicedelete/:id',( req,res,next ) => {
+  console.log("delete client");
+  Services.findByIdAndRemove(req.params.id,(err,details) => {
+    if(err){
+      res.status(500).json({ errmsg: err });
+    }else{
+      res.status(200).json({ msg: details });
+    }
+  })
+})
 
 //Add Booking
 app.post("/api/customerbooking",(req, res, next) => {
@@ -257,7 +310,8 @@ app.get("/api/calculateBilling/:email", (req, res, next) => {
 app.post("/api/makeappointment",(req, res, next) => {
   const appointment = new Appointments({
     email: req.body.email,
-    provide_service: req.body.provide_service
+    provide_service: req.body.provide_service,
+    reservedDate: req.body.reservedDate
   });
   appointment.save()
   .then(add => {
@@ -269,5 +323,15 @@ app.post("/api/makeappointment",(req, res, next) => {
     })
   })
 })
+
+//find registered customers
+app.get("/api/clientcount", (req, res, next) => {
+  Client.find()
+  .exec()
+  .then(doc => {
+    console.log(doc.length);
+    res.status(200).json(doc);
+  })
+});
 
 module.exports = app;

@@ -1,0 +1,42 @@
+
+<div class="main-content">
+  
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h4 class="card-title">Add Client</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card-body card-body-light">
+                          <div class="text-right">
+                            <form #updateserviceForm="ngForm" (ngSubmit)="updateserviceForm.valid && onSubmit(updateserviceForm)">
+                              <div class="form-group">
+                                <!-- <label>First Name</label> -->
+                                <input type="text" required class="form-control" name="service_name" [(ngModel)]="service.service_name" #service_name="ngModel" placeholder="Enter Service Name"> 
+                                <div *ngIf="service_name && (service_name.dirty || service_name.touched)" class="text-danger">
+                                  <small *ngIf="service_name['errors']['required']">Service Name is required. </small>
+                                </div>
+                              </div><br>
+                              <div class="form-group">
+                                <!-- <label>Last Name</label> -->
+                                <input type="text" required class="form-control" name="service_payment" [(ngModel)]="service.service_payment" #service_payment="ngModel" placeholder="Enter Service Fee"> 
+                                <div *ngIf="service_payment && (service_payment.dirty || service_payment.touched)" class="text-danger">
+                                  <small *ngIf="service_payment['errors']['required']">Fee is required. </small>
+                                </div>
+                              </div><br>
+                              <button class="btn btn-primary" type="submit" >Update</button>
+                              <!-- <input type="submit" value="Submit"> -->
+                            </form>
+                            <!-- success message -->
+                            <!-- <div class="success" *ngIf="successMessage">Saved successfully.</div> -->
+                            <!-- error message -->
+                            <!-- <div class="alert" *ngIf="errorMessage">{{errorMessage}}</div> -->
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  

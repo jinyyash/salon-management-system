@@ -15,6 +15,9 @@ import { AddComponent } from 'app/client/add/add.component';
 import { EditComponent } from 'app/client/edit/edit.component';
 import { BillingComponent } from 'app/billing/billing.component';
 import { BillingReportComponent } from 'app/billing-report/billing-report.component';
+import { ServicesComponent } from 'app/services/services.component';
+import { AddservicesComponent } from 'app/services/addservices/addservices.component';
+import { EditservicesComponent } from 'app/services/editservices/editservices.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -65,6 +68,9 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'appointment',    component: AppointmentComponent },
     { path: 'client/add',     component: AddComponent },
     { path: 'client/update',  component: EditComponent },
+    { path: 'services',       component: ServicesComponent },
+    { path: 'services/add',   component: AddservicesComponent },
+    { path: 'services/update',component: EditservicesComponent },
     { path: 'billing',        component: BillingComponent },
     { path: 'report-billing', component: BillingReportComponent },
     { path: 'user-profile',   component: UserProfileComponent },

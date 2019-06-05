@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Addclient } from '../class/addclient';
 import { Billing } from '../class/billing';
+import { Services } from '../class/services';
+import { Clientcount } from '../class/clientcount';
 import { Appointment } from '../class/appointment';
 
 @Injectable({
@@ -11,6 +13,8 @@ export class ProvideServicesService {
 
   private client: Addclient;
   private bill: Billing;
+  private services: Services;
+  private clientcount: Clientcount;
   private apiBaseUrl = 'http://localhost:3000/api' ;
   // private headers = new HttpHeaders().set('Content-Type', 'application/json');
 
@@ -55,6 +59,31 @@ export class ProvideServicesService {
     return this.http.get(this.apiBaseUrl + '/appointmentview');
   }
   SearchAppointment(){
+  }
+
+  // services
+  ViewServices() {
+    return this.http.get(this.apiBaseUrl + '/servicesview');
+  }
+  AddServices(services: Services) {
+    return this.http.post(this.apiBaseUrl + '/serviceadding', services);
+  }
+  UpdateServices(services: Services) {
+    return this.http.put(this.apiBaseUrl + '/serviceupdate', services);
+  }
+  DeleteServices(id: string) {
+    return this.http.delete(this.apiBaseUrl + '/servicedelete/' + id);
+  }
+  SetService(services: Services) {
+    this.services = services;
+  }
+  GetService() {
+    return this.services;
+  }
+
+  //client count
+  CountClient() {
+    return this.http.get(this.apiBaseUrl + '/clientcount');
   }
 }
 

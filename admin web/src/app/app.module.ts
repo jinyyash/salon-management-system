@@ -29,6 +29,9 @@ import { EditComponent } from './client/edit/edit.component';
 import { ProvideServicesService } from './providers/provide-services.service';
 import { BillingComponent } from './billing/billing.component';
 import { BillingReportComponent } from './billing-report/billing-report.component';
+import { ServicesComponent } from './services/services.component';
+import { AddservicesComponent } from './services/addservices/addservices.component';
+import { EditservicesComponent } from './services/editservices/editservices.component';
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -44,6 +47,9 @@ import { BillingReportComponent } from './billing-report/billing-report.componen
   declarations: [
     AppComponent,
     AdminLayoutComponent,
+    // AddservicesComponent,
+    // EditservicesComponent,
+    // ServicesComponent,
     // BillingComponent,
     // AddComponent,
   ],

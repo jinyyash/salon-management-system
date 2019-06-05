@@ -18,6 +18,7 @@ import { AddComponent } from '../../client/add/add.component';
 import { EditComponent } from '../../client/edit/edit.component';
 import { BillingComponent } from '../../billing/billing.component';
 import { BillingReportComponent } from '../../billing-report/billing-report.component';
+import { ServicesComponent } from '../../services/services.component';
 
 import {
   MatButtonModule,
@@ -27,6 +28,8 @@ import {
   MatTooltipModule,
   MatSelectModule
 } from '@angular/material';
+import { AddservicesComponent } from 'app/services/addservices/addservices.component';
+import { EditservicesComponent } from 'app/services/editservices/editservices.component';
 
 
 @NgModule({
@@ -56,7 +59,10 @@ import {
     AddComponent,
     EditComponent,
     BillingComponent,
-    BillingReportComponent
+    BillingReportComponent,
+    ServicesComponent,
+    AddservicesComponent,
+    EditservicesComponent,
   ]
 })
 

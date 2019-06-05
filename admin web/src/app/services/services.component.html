@@ -1,0 +1,46 @@
+
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h4 class="card-title">Client Details</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card-body card-body-light">
+                          <div class="text-left">
+                              <div class="row">
+                              <div class="col-md-2"></div>
+                                <div class="col-md-8">
+                                    <button type="button" class="btn btn-dark" (click)="addingservice($event)"><i class="material-icons">add_circle_outline</i>Add Service</button><br/>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped">
+                                            <thead class="thead-dark text-primary">
+                                                <!-- <th>ID</th> -->
+                                                <th class="text-left">Service Name</th>
+                                                <th class="text-center">Fee</th>
+                                                <th class="text-right">Option</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr *ngFor="let service of services">
+                                                  <td class="text-left">{{ service.service_name }}</td>
+                                                  <td class="text-center">{{ service.service_payment }}</td>
+                                                  <td class="text-right">
+                                                    <button type="submit" class="btn btn-danger" (click)="toDelete(service)">Delete</button>
+                                                    <button type="submit" class="btn btn-primary" (click)="toUpdate(service)">Update</button>
+                                                  </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                              <div class="col-md-2"></div>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
