@@ -2,10 +2,9 @@ const appoinment = require("../models/appoinment");
 
 exports.createAppoinment=  (req, res, next) => {
     const post = new appoinment({
-        title: req.body.title,
-        content: req.body.content
-
+        name :req.body.name,
         email: req.body.email,
+        contactNum: req.body.contactNum,
         bookingServices: req.body.bookingServices,
         bookingDate: req.body.bookingDate,
         bookingTime: req.body.bookingTime,

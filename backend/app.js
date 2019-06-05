@@ -9,10 +9,10 @@ const app = express();
 
 mongoose
   .connect(
-    "mongodb+srv://jinadi:Anohana@123@cluster0-kbku3.mongodb.net/test?retryWrites=true+srv://max:QuBqs0T45GDKPlIG@cluster0-ntrwp.mongodb.net/node-angular?retryWrites=true"
+    "mongodb+srv://jinadi:Anohana@123@cluster0-kbku3.mongodb.net/test?retryWrites=true+srv://max:QuBqs0T45GDKPlIG@cluster0-ntrwp.mongodb.net/node-angular"
   ,{ useNewUrlParser: true })
   .then(() => {
-    console.log("Connected to database!");
+    console.log("Consnected to database!");
   })
   .catch(() => {
     console.log("Connection failed!");

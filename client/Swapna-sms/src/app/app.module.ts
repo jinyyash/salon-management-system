@@ -10,6 +10,8 @@ import { ExamplesModule } from './Swapna/examples.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import {Angular2PhotoswipeModule} from 'angular2_photoswipe';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
+import {AuthInterceptor} from './Swapna/auth/auth-interceptor';
 
 @NgModule({
     declarations: [
@@ -24,9 +26,10 @@ import {Angular2PhotoswipeModule} from 'angular2_photoswipe';
         AppRoutingModule,
         ComponentsModule,
         ExamplesModule,
+        HttpClientModule
 
     ],
-    providers: [],
+    providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
