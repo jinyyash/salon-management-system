@@ -40,6 +40,47 @@ exports.delete=(req, res, next) => {
         console.log(result);
         res.status(200).json({ message: "Post deleted!" });
     });
+
 }
+  
+exports.sentmail=(req, res, next)=>{
+    const out=`
+    <h2>Salon Moon<h2>
+    <h3>Accepted Appointment<h3>
+    <h3>your, ${req.body.provide_service} has accepted. See you that day.<h3>
+    <h3>Thank you<h3>
+    `
+    let transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 587,
+      secure: false, // true for 465, false for other ports
+      auth: {
+        user:' salonmanagementsenari@gmail.com', // generated ethereal user
+        pass: '#admin123' // generated ethereal password
+      }
+    });
+  
+    // send mail with defined transport object
+    let info =  transporter.sendMail({
+      from: '"Salon Moon" <salonmanagementsenari@.gmail.com>', // sender address
+      to: req.body.eemail, // list of receivers
+      subject: "Accepted Appointment", // Subject line
+      text: out, // plain text body
+      html: out // html body
+    });
+  };
+
+  exports.appointmentsviews=(req, res, next) => {
+    Appointments.find()
+    .exec()
+    .then(doc => {
+      console.log(doc);
+      res.status(200).json(doc);
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json();
+    })
+  };
 
 

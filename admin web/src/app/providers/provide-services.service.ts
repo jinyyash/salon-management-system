@@ -13,9 +13,10 @@ export class ProvideServicesService {
 
   private client: Addclient;
   private bill: Billing;
+  private appointment:Appointment;
   private services: Services;
   private clientcount: Clientcount;
-  private apiBaseUrl = 'http://localhost:4003/api' ;
+  private apiBaseUrl = 'http://localhost:3000/api' ;
   // private headers = new HttpHeaders().set('Content-Type', 'application/json');
 
   constructor( public http: HttpClient ) {
@@ -56,7 +57,11 @@ export class ProvideServicesService {
 
   // appointment
   ViewAppointment() {
-    return this.http.get(this.apiBaseUrl + '/appointmentview');
+    return this.http.get(this.apiBaseUrl + '/appointments/views');
+  }
+  sentmail(appointment){
+    return this.http.post(this.apiBaseUrl+'/sentmail', appointment);
+
   }
   SearchAppointment(){
   }
