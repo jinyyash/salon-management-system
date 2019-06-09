@@ -1,0 +1,58 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger">
+                      <h4 class="card-title">Edit Profile</h4>
+                      <p class="card-category">You can update your existing information here.</p>
+                  </div>
+                  <div class="card-body">
+                      <form #employeeForm="ngForm" (ngSubmit)="onSubmit(employeeForm)">
+                        <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="employeeService.selectedEmployee">
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <mat-form-field class="example-full-width">
+                                    <input type="text" matInput placeholder="NIC" name="nic" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.nic">
+                                  </mat-form-field>
+                              </div>
+                              <div class="col-md-6">
+                                  <mat-form-field class="example-full-width">
+                                    <input type="email" matInput placeholder="Email address" name="email" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.email">
+                                  </mat-form-field>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6">
+                                <mat-form-field class="example-full-width">
+                                  <input type="text" matInput placeholder="First Name" name="fname" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.fname">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-md-6">
+                                <mat-form-field class="example-full-width">
+                                  <input type="text" matInput placeholder="Last Name" name="lname" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.lame">
+                                </mat-form-field>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6">
+                                <mat-form-field class="example-full-width">
+                                  <input type="text" matInput placeholder="Phone No" name="phone" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.phone">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-md-6">
+                                <mat-form-field class="example-full-width">
+                                  <input type="text" matInput placeholder="Date of Birth" name="dob" #name="ngModel" [(ngModel)]="employeeService.selectedEmployee.dob">
+                                </mat-form-field>
+                              </div>
+                          </div>
+                          <button mat-raised-button type="submit" class="btn btn-danger pull-right" [disabled]="!employeeForm.valid">Update Profile</button>
+                          <div class="clearfix"></div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+  </div>
+</div>
