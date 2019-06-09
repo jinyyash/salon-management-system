@@ -21,7 +21,7 @@ exports.createAppoinment=  (req, res, next) => {
     });
 }
 
-exports.getAllPost=(req, res, next) => {
+exports.getAllAppointment=(req, res, next) => {
     appoinment.find().then(documents => {
         res.status(200).json({
             message: "fetched successfully!",
@@ -30,7 +30,7 @@ exports.getAllPost=(req, res, next) => {
     });
 };
 
-exports.deletePost=(req, res, next) => {
+exports.deleteAppointment=(req, res, next) => {
     appoinment.deleteOne({ _id: req.params.id }).then(result => {
         console.log(result);
         res.status(200).json({ message: "Post deleted!" });

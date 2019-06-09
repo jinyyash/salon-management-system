@@ -1,0 +1,63 @@
+
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h4 class="card-title">Report Generate</h4>
+            </div>
+            <div class="text-left">
+                <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6">
+                        <div class="input-group no-border">
+                            <!-- <input type="text" required class="form-control" name="email" #email placeholder="Email Address..."> -->
+                            <!-- <input type="text" required class="form-control" name="email" [(ngModel)]="email" #email="ngModel" placeholder="Email Address..."> -->
+                            <input type="text" required class="form-control" name="email" #email placeholder="Email Address...">
+                            <button mat-raised-button type="submit" (click)="search(email.value)" class="btn btn-white btn-round btn-just-icon">
+                                <i class="material-icons">search</i>
+                                <div class="ripple-container"></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card-body card-body-light">
+                        <div id="content" #content>
+                            <h1 class="card-title text-center"><b>Salon Moon</b></h1>
+                            <div class="text-left">
+                                <!-- <button type="button" class="btn btn-dark" (click)="billing($event)">Add Client</button> -->
+                                Email : {{email.value}}
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <th>Service</th>
+                                        <th>Payment</th>
+                                    </thead>
+                                    <tbody>
+                                      <tr *ngFor="let appointment of appointments">
+                                          <td>{{ appointment.provide_service }}</td>
+                                          <td>{{ appointment.payment }}</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                                <p><b>Total Bill : {{x}}</b></p>
+                            </div>
+                            <br/><br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8"></div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-dark" (click)="downloadPDF()">Export To PDF<i class="material-icons">archive</i> </button>
+                </div>
+            </div>    
+        </div>
+    </div>
+    
+  </div>
+
+
+  

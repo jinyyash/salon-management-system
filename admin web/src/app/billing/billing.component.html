@@ -1,0 +1,54 @@
+
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="card">
+          <div class="card-header card-header-danger">
+              <h4 class="card-title">Appointment Details</h4>
+          </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="card-body card-body-light">
+                        <div class="text-left">
+                            <!-- <button type="button" class="btn btn-dark" (click)="billing($event)">Add Client</button> -->
+                            <div class="row">
+                                <div class="col-lg-6"></div>
+                                <div class="col-lg-6">
+                                    <div class="input-group no-border">
+                                        <!-- <input type="text" required class="form-control" name="email" #email placeholder="Email Address..."> -->
+                                        <!-- <input type="text" required class="form-control" name="email" [(ngModel)]="email" #email="ngModel" placeholder="Email Address..."> -->
+                                        <!-- <input type="text" required class="form-control" name="email" #email placeholder="Email Address..."> -->
+                                        <!-- <button mat-raised-button type="submit" (click)="search(email.value)" class="btn btn-white btn-round btn-just-icon">
+                                            <i class="material-icons">search</i>
+                                            <div class="ripple-container"></div>
+                                        </button> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead class="thead-dark">
+                                        <!-- <th>ID</th> -->
+                                        <th>Customer Email</th>
+                                        <th>Service</th>
+                                        <th>Payment</th>
+                                        <!-- <th>Options</th> -->
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let billing of billings">
+                                          <td>{{ billing.email }}</td>
+                                          <td>{{ billing.provide_service }}</td>
+                                          <td>{{ billing.payment }}</td>
+                                          <!-- <td>
+                                            <button type="submit" class="btn btn-primary">Send</button>
+                                          </td> -->
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

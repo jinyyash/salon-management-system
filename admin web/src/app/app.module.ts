@@ -1,9 +1,8 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-
 
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
@@ -18,16 +17,24 @@ import { IconsComponent } from './icons/icons.component';
 import { MapsComponent } from './maps/maps.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
+import { ClientComponent } from './client/client.component';
+import { AppointmentComponent } from './appointment/appointment.component';
+import { EmployeeComponent } from './employee/employee.component';
 import {
   AgmCoreModule
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-
+import { ProvideServicesService } from './providers/provide-services.service';
+import { BillingComponent } from './billing/billing.component';
+import { BillingReportComponent } from './billing-report/billing-report.component';
+import { ServicesComponent } from './services/services.component';
+import { AddservicesComponent } from './services/addservices/addservices.component';
+import { EditservicesComponent } from './services/editservices/editservices.component';
 @NgModule({
   imports: [
     BrowserAnimationsModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
@@ -38,9 +45,13 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-
+    // AddservicesComponent,
+    // EditservicesComponent,
+    // ServicesComponent,
+    // BillingComponent,
+    // AddComponent,
   ],
-  providers: [],
+  providers: [ProvideServicesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

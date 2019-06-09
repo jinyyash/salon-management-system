@@ -8,6 +8,14 @@ import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
+import { ClientComponent } from '../../client/client.component';
+import { EmployeeComponent } from 'app/employee/employee.component';
+import { AppointmentComponent } from 'app/appointment/appointment.component';
+import { BillingComponent } from 'app/billing/billing.component';
+import { BillingReportComponent } from 'app/billing-report/billing-report.component';
+import { ServicesComponent } from 'app/services/services.component';
+import { AddservicesComponent } from 'app/services/addservices/addservices.component';
+import { EditservicesComponent } from 'app/services/editservices/editservices.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -53,11 +61,19 @@ export const AdminLayoutRoutes: Routes = [
     //     }]
     // }
     { path: 'dashboard',      component: DashboardComponent },
+    { path: 'employee',       component: EmployeeComponent },
+    { path: 'client',         component: ClientComponent },
+    { path: 'appointment',    component: AppointmentComponent },
+    { path: 'services',       component: ServicesComponent },
+    { path: 'services/add',   component: AddservicesComponent },
+    { path: 'services/update',component: EditservicesComponent },
+    { path: 'billing',        component: BillingComponent },
+    { path: 'report-billing', component: BillingReportComponent },
     { path: 'user-profile',   component: UserProfileComponent },
     { path: 'table-list',     component: TableListComponent },
     { path: 'typography',     component: TypographyComponent },
     { path: 'icons',          component: IconsComponent },
     { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
-    { path: 'upgrade',        component: UpgradeComponent },
+    { path: 'upgrade',        component: UpgradeComponent }
 ];

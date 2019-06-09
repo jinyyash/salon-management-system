@@ -3,11 +3,10 @@ const router = express.Router();
 const Post = require("../models/appoinment");
 const appoinmentController=require('../controllers/AppoinmentController.js')
 
-router.post("",appoinmentController.createPost);
+router.post("/add",appoinmentController.createAppoinment);
 
-router.get("", appoinmentController.getAllPost);
+router.get("/view", appoinmentController.getAllAppointment);
 
-router.delete("/:id", );
-
+router.delete("/delete/:id", appoinmentController.deleteAppointment);
 
 module.exports=router;
