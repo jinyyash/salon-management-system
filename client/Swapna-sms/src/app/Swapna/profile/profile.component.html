@@ -37,7 +37,7 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="card card-signup" >
-                                                    <form class="form"  #f="ngForm"  >
+                                                    <form class="form" (ngSubmit)="onSubmit(f)" #f="ngForm"   >
                                                         <div class="header text-center">
                                                             <h4 class="title title-up">Book Your Date</h4>
                                                         </div>
@@ -46,7 +46,7 @@
 
                                                             <div class="form-group" >
                                                                 <label class="form-control-label">Select Your Treatment</label>
-                                                                <select [(ngModel)]="value2" name="selectTime"  class="form-control text-primary" id="selectTime" required data-color="white">
+                                                                <select [(ngModel)]="value2" name="treatment"  class="form-control text-primary" id="treatment" required data-color="white">
                                                                     <option >
                                                                         <h5>Select Your Treatment</h5>
                                                                     </option>

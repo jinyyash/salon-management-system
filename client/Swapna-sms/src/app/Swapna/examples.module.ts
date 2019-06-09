@@ -14,6 +14,8 @@ import { GalleryComponent } from './landing/gallery/gallery.component';
 import {Angular2PhotoswipeModule} from 'angular2_photoswipe';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
 import { SignInComponent } from './auth/sign-in/sign-in.component';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
+import {AuthInterceptor} from './auth/auth-interceptor';
 
 @NgModule({
     imports: [
@@ -25,8 +27,12 @@ import { SignInComponent } from './auth/sign-in/sign-in.component';
         AgmCoreModule.forRoot({
             apiKey: 'YOUR_KEY_HERE'
         }),
-        Angular2PhotoswipeModule
+        Angular2PhotoswipeModule,
+        HttpClientModule
+
     ],
+    providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
+
     declarations: [
         LandingComponent,
         LoginComponent,
@@ -34,7 +40,8 @@ import { SignInComponent } from './auth/sign-in/sign-in.component';
         ProfileComponent,
         GalleryComponent,
         SignUpComponent,
-        SignInComponent
+        SignInComponent,
+
     ]
 })
 export class ExamplesModule { }

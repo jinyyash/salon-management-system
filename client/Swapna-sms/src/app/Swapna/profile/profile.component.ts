@@ -1,6 +1,8 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import * as Rellax from 'rellax';
 import {NgForm} from '@angular/forms';
+import {AppoinmentService} from './appoinment.service';
+import {AuthServiceService} from '../auth/auth-service.service';
 
 
 @Component({
@@ -9,9 +11,13 @@ import {NgForm} from '@angular/forms';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit, OnDestroy {
+
   zoom = 14;
   lat = 44.445248;
   lng = 26.099672;
+  userId: string;
+  name: string;
+  contactNum: string;
   styles: any[] = [{
     'featureType': 'water',
     'elementType': 'geometry',
@@ -62,14 +68,10 @@ export class ProfileComponent implements OnInit, OnDestroy {
   data: Date = new Date();
   focus;
   focus1;
-  levelNum:number;
-  levels: Array<Object> = [
-    {num: 0, name: "AA"},
-    {num: 1, name: "BB"}
-  ];
-  selectedLevel = this.levels[1];
 
-  constructor() {
+
+
+  constructor(private appoinmentService: AppoinmentService, private authService: AuthServiceService) {
   }
 
   ngOnInit() {
@@ -79,6 +81,7 @@ export class ProfileComponent implements OnInit, OnDestroy {
     body.classList.add('profile-page');
     const navbar = document.getElementsByTagName('nav')[0];
     navbar.classList.add('navbar-transparent');
+    this.userId = this.authService.getUserMail();
   }
 
   ngOnDestroy() {
@@ -87,22 +90,30 @@ export class ProfileComponent implements OnInit, OnDestroy {
     const navbar = document.getElementsByTagName('nav')[0];
     navbar.classList.remove('navbar-transparent');
   }
+  getDetails() {
 
-  onWigRequest(form: NgForm) {
-    const nic = form.value.nicnumber;
-    const address = form.value.address;
-    const gender = form.value.gender;
-    const description = form.value.description;
-  };
-
-  onMeasurements(form: NgForm) {
-    const circumference = form.value.circumference;
-    const front_to_nape = form.value.front_to_nape;
-    const ear_to_ear_over_forehead = form.value.ear_to_ear_over_forehead;
-    const ear_to_ear_across_top = form.value.ear_to_ear_across_top;
-    const temple_to_temple_around_back = form.value.temple_to_temple_around_back;
-    const nape_of_neck = form.value.nape_of_neck;
-    const colour = form.value.colour;
   }
+  onSubmit(form: NgForm) {
+    const name = 'jinadi';
+    const email = 'jinyyash@gmail.com';
+   const contactNum = '0715883767';
+    const bookingServices = form.value.treatment;
+    const bookingDate = form.value.date;
+    const bookingTime = form.value.selectTime;
+    const status = false;
+
+    const data = {
+      name : name,
+      email : email,
+      contactNum: contactNum,
+      bookingServices : bookingServices,
+      bookingDate : bookingDate['year'] + '-' + bookingDate['month'] + '-' + bookingDate['day'],
+      bookingTime : bookingTime,
+      status : status,
+    }
+   // this.appoinmentService.addAppoinment(name, email, contactNum, bookingServices, bookingDate, bookingTime, status);
+   this.appoinmentService.addAppoinment(data);
+  }
+
 
 }

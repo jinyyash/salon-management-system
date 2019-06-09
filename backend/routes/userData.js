@@ -1,13 +1,13 @@
  const express=require('express');
  const router = express.Router();
  const Post = require("../models/userData");
- const postController=require('../controllers/userDataController')
+ const controller=require('../controllers/userDataController')
  
- router.post("",postController.createPost);
+ router.post("",controller.create);
  
- router.get("", postController.getAllPost);
+ router.get("", controller.getAll);
   
- router.delete("/:id", );
+ router.delete("/:id", controller.delete);
   
 
  module.exports=router;
