@@ -13,7 +13,7 @@ import {SignInComponent} from './Swapna/auth/sign-in/sign-in.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'index', pathMatch: 'full' },
-    { path: 'index',                component: ComponentsComponent },
+    { path: 'index',                component: LandingComponent },
     { path: 'nucleoicons',          component: NucleoiconsComponent },
     { path: 'Swapna/landing',     component: LandingComponent },
     { path: 'Swapna/login',       component: LoginComponent },

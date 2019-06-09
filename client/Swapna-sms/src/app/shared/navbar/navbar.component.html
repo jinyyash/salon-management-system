@@ -7,70 +7,64 @@
               <span class="button-bar"></span>
               <span class="button-bar"></span>
           </a>
-           <div ngbDropdownMenu>
-             <a class="dropdown-header">Dropdown header</a>
-             <a class="dropdown-item" href="#">Action</a>
-             <a class="dropdown-item" href="#">Another action</a>
-             <a class="dropdown-item" href="#">Something else here</a>
-             <div class="dropdown-divider"></div>
-             <a class="dropdown-item" href="#">Separated link</a>
-             <div class="dropdown-divider"></div>
-             <a class="dropdown-item" href="#">One more separated link</a>
-           </div>
+
          </div>
       </div>
         <div class="navbar-translate">
-            <a class="navbar-brand" [routerLink]="['/index']" placement="bottom" ngbTooltip="Designed by Invision. Coded by Creative Tim">
-                Now Ui Kit
+            <a class="navbar-brand" [routerLink]="['/index']">
+                Swapna
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
-                <span class="navbar-toggler-bar bar1"></span>
-                <span class="navbar-toggler-bar bar2"></span>
-                <span class="navbar-toggler-bar bar3"></span>
-            </button>
+
         </div>
         <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="https://www.creative-tim.com/product/now-ui-kit-angular" target="_blank">
-                      <i class="now-ui-icons arrows-1_cloud-download-93"></i>
-                      <p>Download</p>
-                  </a>
-              </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://creativetimofficial.github.io/now-ui-kit-angular/documentation/tutorial" target="_blank">
-                      <i class="now-ui-icons files_paper"></i>
-                      <p>Documentation</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://creativetimofficial.github.io/now-ui-kit-angular/documentation/tutorial" target="_blank">
+                <li class="nav-item" *ngIf="!userIsAuthenticated">
+                    <a class="nav-link" href="/Swapna/signUp" target="_blank">
                         <i class="now-ui-icons files_paper"></i>
                         <p>Make Appoinmet</p>
                     </a>
                 </li>
+                <li class="nav-item" *ngIf="userIsAuthenticated">
+                    <a class="nav-link" href="Swapna/profile" target="_blank">
+                        <i class="now-ui-icons files_paper"></i>
+                        <p>Profile</p>
+                    </a>
+                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://creativetimofficial.github.io/now-ui-kit-angular/documentation/tutorial" target="_blank">
+                    <a class="nav-link" href="/" target="_blank">
                         <i class="now-ui-icons files_paper"></i>
                         <p>Services</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://creativetimofficial.github.io/now-ui-kit-angular/documentation/tutorial" target="_blank">
+                    <a class="nav-link" href="/" target="_blank">
                         <i class="now-ui-icons files_paper"></i>
                         <p>Gallery</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://creativetimofficial.github.io/now-ui-kit-angular/documentation/tutorial" target="_blank">
+                    <a class="nav-link" href="/" target="_blank">
                         <i class="now-ui-icons files_paper"></i>
                         <p>Contact Us</p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-neutral" href="https://www.creative-tim.com/product/now-ui-kit-pro-angular" target="_blank">
+
+                <li class="nav-item" *ngIf="!userIsAuthenticated">
+                    <a class="nav-link" href="/Swapna/signIn" target="_blank">
+                        <i class="now-ui-icons files_paper"></i>
+                        <p>Login</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!userIsAuthenticated">
+                    <a class="nav-link btn btn-neutral" href="/Swapna/signUp" target="_blank">
                         <i class="now-ui-icons arrows-1_share-66"></i>
-                        <p>Upgrade to PRO</p>
+                        <p>SignUp</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="userIsAuthenticated">
+                    <a class="nav-link btn btn-default" href="/Swapna/signIn" target="_blank" (click)="onLogout()">
+                        <i class="now-ui-icons arrows-1_share-66"></i>
+                        <p>LogOut</p>
                     </a>
                 </li>
                 <li class="nav-item">

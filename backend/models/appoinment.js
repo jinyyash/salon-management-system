@@ -1,12 +1,13 @@
 const mongoose = require('mongoose');
 
 const apSchema = mongoose.Schema({
-  email: { type: String },
   bookingServices: { type: String },
   bookingDate: { type: Date},
   bookingTime: { type: String },
-  status:{type:String}
+  status:{type:String},
+  creator: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true }
+
 
 });
 
-module.exports = mongoose.model('appoinment', apSchema);
+module.exports = mongoose.model('appointment', apSchema);

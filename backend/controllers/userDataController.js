@@ -1,10 +1,10 @@
 const Post = require("../models/userData");
 
-exports.createPost=  (req, res, next) => {
+exports.create=  (req, res, next) => {
     const post = new Post({
-        name: { type: String, required: true },
-        email: { type: String, required: true, unique: true },
-        contactNum: { type: String, required: true }
+        name: req.body.name,
+        email: req.body.email,
+        contactNum: req.body.contactNum
     });
     post.save().then(createdPost => {
         res.status(201).json({
@@ -17,7 +17,7 @@ exports.createPost=  (req, res, next) => {
       });
   }
 
-  exports.getAllPost=(req, res, next) => {
+  exports.getAll=(req, res, next) => {
     Post.find().then(documents => {
       res.status(200).json({
         message: "fetched successfully!",
@@ -26,7 +26,7 @@ exports.createPost=  (req, res, next) => {
     });
   };
 
-  exports.deletePost=(req, res, next) => {
+  exports.delete=(req, res, next) => {
     Post.deleteOne({ _id: req.params.id }).then(result => {
       console.log(result);
       res.status(200).json({ message: "deleted!" });

@@ -1,17 +1,22 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const cors = require('cors');
 
 const Post = require("./models/post");
+
+const User=require("./models/userData");
+const UserData=require("./models/user");
 const postRoutes=require('./routes/posts');
 const userRoutes=require('./routes/users');
+const userDataRoutes=require('./routes/userData');
 const servicesRoutes = require('./routes/services');
 const clientRoutes = require('./routes/client');
+const appoinmentRoutes=require('./routes/appoinments');
 const appointmentRoutes = require('./routes/appoinments');
 const billingRoutes = require('./routes/billing');
 const chartRoutes = require('./routes/chart');
 const app = express();
-
 
 mongoose
   .connect(
@@ -39,13 +44,21 @@ app.use((req, res, next) => {
   );
   next();
 });
+ 
+app.use(cors({ origin: true }));
 
 app.use("/api/posts",postRoutes);
+
 app.use("/api/users",userRoutes);
 app.use("/api/services",servicesRoutes);
 app.use("/api/client",clientRoutes);
 app.use("/api/appointment",appointmentRoutes);
 app.use("/api/billing",billingRoutes);
 app.use("/api/chart",chartRoutes);
+
+app.use("/api/user",userRoutes);
+app.use("/api/userData",userDataRoutes);
+app.use("/api/appointments",appoinmentRoutes);
+
 
 module.exports = app;
